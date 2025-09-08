@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - ShopZone</title>
+  <link rel="icon" href="/myntra clone/image1.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>
+        <a href="/myntra clone/homepage/index.html">
+          <img src="/myntra clone/image1.jpeg" alt="ShopZone">
+        </a>
+        <div class="logo"><a href="index.html">ShopZone</a></div>
+      </h1>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for products, brands, and more" onkeyup="searchFunction()">
+      <button type="button" id="searchButton">Search</button>
+    </div>
+
+    <div id="suggestions"></div>
+
+    <nav>
+      <ul>
+        <li><a href="/myntra clone/homepage/index.html">Home</a></li>
+        <li><a href="/myntra clone/homepage/index.html">Shop</a></li>
+        <li><a href="/myntra clone/menpage/men.html">Men</a></li>
+        <li><a href="/myntra clone/womenpage/women.html">Women</a></li>
+        <li><a href="/myntra clone/kidspage/kids.html">Kids</a></li>
+        <li><a href="/myntra clone/cartpage/cart.html" target="_blank">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cart-container">
+    <h2>Your Cart</h2>
+    <div id="cart-items-list"></div>
+    
+    <div id="cart-summary">
+      <h3>Total: ₹<span id="total-price">0</span></h3>
+      <button id="buy-now-button" onclick="buyNow()">Buy Now</button>
+    </div>
+  </section>
+  <div id="payment-modal" class="payment-modal">
+    <div class="modal-content">
+      <h2>Payment Details</h2>
+      <form id="payment-form" onsubmit="processPayment(event)">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" required maxlength="16">
+        <br>
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" required maxlength="3">
+        <br>
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="text" id="expiry-date" placeholder="MM/YY" required maxlength="5">
+        <br><br>
+        <button type="submit" id="pay">Pay Now</button>
+      </form><br>
+      <button onclick="closePaymentModal()">Cancel</button>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Myntra Clone</p>
+  </footer>
+
+</body>
+</html>

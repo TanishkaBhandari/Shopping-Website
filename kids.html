@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kid's Section - ShopZone</title>
+  <link rel="icon" href="/myntra clone/image1.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="kids.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>
+        <a href="index.html">
+          <img src="/myntra clone/image1.jpeg" alt="ShopZone">
+        </a>
+        <div class="logo"><a href="/myntra clone/homepage/index.html">ShopZone</a></div>
+      </h1>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for products, brands, and more" onkeyup="searchFunction()">
+      <button type="button" id="searchButton">Search</button>
+    </div>
+
+    <div id="suggestions"></div>
+
+    <nav>
+      <ul>
+        <li><a href="/myntra clone/homepage/index.html">Home</a></li>
+        <li><a href="/myntra clone/homepage/index.html">Shop</a></li>
+        <li><a href="/myntra clone/menpage/men.html">Men</a></li>
+        <li><a href="/myntra clone/womenpage/women.html">Women</a></li>
+        <li><a href="/myntra clone/kidspage/kids.html">Kids</a></li>
+        <li><a href="/myntra clone/cartpage/cart.html" target="_blank">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Kid's Dresses</h2>
+    <p>Explore the best quality and clothes for the little ones.</p>
+  </section>
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="/myntra clone/kids images/image 1.jpg" alt="Product 1">
+        <h3>AMEESHA
+          <p>Blue-white three piece suit</p></h3>
+          <p>₹ 709</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Blue-white three piece suit', 2499)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/myntra clone/kids images/image 2.jpg" alt="Product 2">
+        <h3>Azira
+          <p>Floral Print Puff Sleeve Maroon and white frock with waist bow</p></h3>
+      <p>₹ 606</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Floral Print Puff Sleeve Maroon and white frock with waist bow', 1999)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/myntra clone/kids images/image 3.jpg" alt="Product 3">
+        <h3>Chemistry
+          <p>Winter Kids Wear Jacket With Pants Clothing Set For Boys & Girls </p></h3>
+      <p>₹ 327</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Winter Kids Wear Jacket With Pants Clothing Set For Boys & Girls', 899)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/myntra clone/kids images/image 4.jpg" alt="Product 4">
+        <h3>AMEESHA
+          <p>Kid's cotton sweatshirt and pants</p></h3>
+      <p>₹ 529</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Kids cotton sweatshirt and pants', 3999)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/myntra clone/kids images/image 5.jpg" alt="Product 5">
+        <h3>SASSAFRAS
+          <p>unisex child fleece Track Suit</p></h3>
+      <p>₹ 398</p>
+        <button class="add-to-cart-btn" onclick="addToCart('unisex child fleece Track Suit', 1599)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="/myntra clone/kids images/image 6.jpg" alt="Product 6">
+        <h3>Chemistry
+          <p>Unisex Baby Flannel Jumpsuit Panda Style Cosplay Clothes Bunting Outfits Snowsuit Hooded Romper Outwear</p></h3>
+      <p>₹ 599</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Jumpsuit Panda Style Cosplay Clothes', 2599)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Myntra Clone</p>
+  </footer>
+
+  <script src="kids.js"></script>
+</body>
+</html>
